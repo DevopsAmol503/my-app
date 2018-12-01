@@ -15,4 +15,18 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+  
+  <distributionManagement>
+    <repository>
+      <id>my-app-release</id>
+      <name>my-app-release</name>
+      <url>http://ec2-13-232-126-108.ap-south-1.compute.amazonaws.com:8081/nexus/content/repositories/my-app-release/</url>
+    </repository>
+    <snapshotRepository>
+      <id>my-app-snapshots</id>
+      <name>my-app-snapshots</name>
+      <url>http://ec2-13-232-126-108.ap-south-1.compute.amazonaws.com:8081/nexus/content/repositories/my-app-snapshots/</url>
+    </snapshotRepository>
+  </distributionManagement>
+ 
 </project>
