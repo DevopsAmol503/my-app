@@ -2,7 +2,7 @@ node('mavel-lable'){
    def mvnHome
    stage('Preparation') { // for display purposes
       // Get some code from a GitHub repository
-      git 'https://github.com/jglick/simple-maven-project-with-tests.git'
+      git branch: '$(branch)', url: 'https://github.com/DevopsAmol503/my-app.git'
       mvnHome = tool name: 'maven3.6.0', type: 'maven'
    }
    stage('Build') {
