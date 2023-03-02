@@ -3,6 +3,7 @@ node('any'){
    stage('Preparation') { // for display purposes
       // Get some code from a GitHub repository
       git branch: '$(branch)', url: 'https://github.com/DevopsAmol503/my-app.git'
+      credentialsId: 'jenkins-git-key'
       mvnHome = tool name: 'maven3.6.0', type: 'maven'
    }
    stage('Build') {
