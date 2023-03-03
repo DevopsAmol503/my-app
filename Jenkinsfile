@@ -1,4 +1,9 @@
 node('any'){
+     tools { 
+          maven 'MAVEN_HOME' 
+          jdk 'JAVA_HOME' 
+           }
+   
    def MAVEN_HOME='C:\Users\Amol Bhoj\Desktop\Devops\apache-maven-3.9.0\'
    stage('SCM Checkout- Preparation') { // for display purposes
       // Get some code from a GitHub repository
