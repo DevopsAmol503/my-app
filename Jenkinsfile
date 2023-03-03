@@ -1,6 +1,6 @@
 node('any'){
-   def mvnHome
-   stage('Preparation') { // for display purposes
+   def mvnHome='C:\Users\Amol Bhoj\Desktop\Devops\apache-maven-3.9.0\'
+   stage('SCM Checkout- Preparation') { // for display purposes
       // Get some code from a GitHub repository
      // withCredentials([usernamePassword(credentialsId: 'jenkins-git-key', passwordVariable: 'pass', usernameVariable: 'user')]) {
     // the code here can access $pass and $user
